@@ -1,0 +1,39 @@
+<!-- basic template - renderer process -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flash export - Canvas generator</title>
+  
+    <script>
+     
+      const {ipcRenderer} = require("electron");   
+
+    </script>   
+     
+  </head>
+  <body>
+     <header>
+        <h1>Canvas generator</h1>
+     </header>
+     
+     
+     <section>
+<!--   // synchronne posle zpravu exitApp   -->
+       <p><a href="#" onclick="ipcRenderer.sendSync('exitApp')">Exit</a></p>
+     </section>
+     
+     <footer>
+        <i>created by Lukas Cernohous</i>
+     </footer>
+   
+     <script>
+                  
+//         function exitApp() {
+//            ipcRenderer.sendSync('exitApp');
+//         }
+     
+     </script> 
+     
+  </body>
+</html>
